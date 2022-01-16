@@ -14,6 +14,7 @@ hidden_size = 256
 learning_rate = 3e-4
 
 # Constants
+# Gamma est l'importance qu'on donne à la récompense en fonction de l'étape à laquelle on va être EX : Rt+1 + γRt+2 + γ²Rt+3 + γ³Rt+4 (Plus la récompense est dans longtemps moins elle a d'importance) si gamma == 1, on considère que toutes les récompenses sont autant importantes, peu importe de quand on les obtients.
 GAMMA = 0.99
 num_steps = 300
 max_episodes = 1000
